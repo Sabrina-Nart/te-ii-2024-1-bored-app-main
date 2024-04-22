@@ -24,3 +24,33 @@
         </ion-item>
     </form>
 </ion-content>
+
+<!--
+
+1. **Cabeçalho e Barra de Ferramentas**:
+   - O componente começa com um cabeçalho definido pela tag `<ion-header>`.
+   - Dentro do cabeçalho, há uma barra de ferramentas (`<ion-toolbar>`) com o título "Bored".
+
+2. **Conteúdo Principal**:
+   - O conteúdo principal do componente está dentro da tag `<ion-content>`.
+   - Há um formulário (`<form>`) que permite aos usuários selecionar um tipo de atividade.
+   - O atributo `[formGroup]` está vinculado ao `FormGroup` chamado `form` definido no componente.
+   - Quando o formulário é enviado (por exemplo, ao clicar em um botão), o método `onSubmit()` é chamado.
+
+3. **Seleção de Tipo de Atividade**:
+   - Dentro do formulário, há um item (`<ion-item>`) que contém um rótulo (`<ion-label>`) com o texto "Type".
+   - Um seletor (`<ion-select>`) permite ao usuário escolher o tipo de atividade.
+   - Os tipos de atividade são gerados dinamicamente a partir do array `types`.
+   - Cada opção é representada por uma tag `<ion-select-option>` com o valor correspondente.
+
+4. **Botão de Envio**:
+   - Abaixo do seletor, há um botão (`<ion-button>`) com o texto "Search".
+   - Quando o usuário clica neste botão, o formulário é enviado.
+
+5. **Exibição da Atividade Selecionada**:
+   - Finalmente, há um item que exibe o resultado da atividade selecionada.
+   - O texto da atividade é exibido dentro de uma tag `<ion-text>` com a cor primária.
+
+Lembre-se de que este código HTML está vinculado ao componente TypeScript `BoredComponent`. O comportamento real do componente depende da lógica implementada no arquivo TypeScript e do serviço associado.
+
+-->
